@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Task Manager</title>
+        <link rel="icon" href="http://www.powerpac.org/wp-content/uploads/2017/07/checklist.png">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body onload="loader()">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <p class="h5">Tasks : </p>
+                <span id="show"></span>
+            </div>
+            <div class="col-4 card form-group">
+                <div class="md-form">
+                    <p class="h5">Enter the Task Below : </p>
+                    <input type="text" id="inputData" class="form-control" placeholder="Write Something Here">                       
+                </div>
+                <button onclick="apiCall()" class="btn btn-outline-danger waves-effect">Add&emsp;<i class="fas fa-plus-circle"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
